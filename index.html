@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs en HTML</title>
+    <style>
+        body {
+            text-align: center;
+            background: rgb(34,148,195);
+            background: linear-gradient(0deg, rgba(34,148,195,1) 13%, rgba(45,253,230,1) 100%);
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: inline-block;
+            text-align: left;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }   
+        form {
+            margin-top: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="url"],
+        input[type="datetime-local"],
+        input[type="month"],
+        input[type="week"],
+        input[type="search"],
+        input[type="range"],
+        input[type="color"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"],
+        input[type="file"],
+        input[type="image"] {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #2294c3;
+            color: black;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        input[type="button"]:hover,
+        input[type="file"]:hover,
+        input[type="image"]:hover {
+            background-color: #2dfde6;
+        }
+        footer h1 {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> INFORMACIÓN SOBRE HTML</h1>
+        <p style="width: 900px;">Son siglas de HyperText Markup Language (Lenguaje de Marcado de Hipertexto), es el lenguaje estándar utilizado para crear y estructurar el contenido en la web. 
+            Es el lenguaje que se utiliza para definir la estructura básica de una página web, incluyendo elementos como encabezados, párrafos, listas, enlaces, imágenes, formularios y otros tipos de contenido.</p>
+        <img src="img/html.jpg" alt="" style="width: 500px; border:3px solid black;">
+        <h1>CARACTERÍSTICAS DEL HTML</h1>
+        <ol style="width: 900px;">
+            <li><b> Lenguaje de marcado: </b> HTML utiliza "etiquetas" (tags) para marcar diferentes tipos de contenido.</li><br>
+            <li><b> Estructura de documentos:</b> HTML organiza el contenido en una jerarquía de elementos, donde cada elemento 
+                está definido por una etiqueta de apertura y, generalmente, una etiqueta de cierre.</li><br>
+            <li><b> No es un lenguaje de programación:</b> HTML no es un lenguaje de programación en el sentido tradicional; no tiene lógica ni variables. 
+                Simplemente define la estructura y presentación del contenido.</li><br>
+            <li><b> Interactividad y estilos:</b> HTML se combina con CSS (Cascading Style Sheets) para estilizar y con JavaScript para agregar interactividad a las páginas web.</li><br>
+            <li><b> Es la base de la web:</b> Todo el contenido en la web, desde sitios simples hasta aplicaciones web complejas, está construido sobre HTML.</li>
+        </ol>
+        <h1>FORMULARIO CON TIPOS DE INPUTS QUE EXISTEN EN HTML</h1>
+        <form action="" method="get">
+            <div class="input-group">
+                <label for="text">Texto:</label>
+                <input type="text" id="text" name="text">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="input-group">
+                <label for="number">Número:</label>
+                <input type="number" id="number" name="number">
+            </div>
+
+            <div class="input-group">
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <div class="input-group">
+                <label for="checkbox">Checkbox:</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+            </div>
+
+            <div class="input-group">
+                <label>Radio:</label><br>
+                <input type="radio" id="radio1" name="radio" value="opcion1">
+                <label for="radio1">Opción 1</label><br>
+                <input type="radio" id="radio2" name="radio" value="opcion2">
+                <label for="radio2">Opción 2</label>
+            </div>
+
+            <div class="input-group">
+                <label for="button">Botón:</label>
+                <input type="button" id="button" value="Presionar">
+            </div>
+
+            <div class="input-group">
+                <label for="submit">Enviar:</label>
+                <input type="submit" id="submit" value="Enviar">
+            </div>
+
+            <div class="input-group">
+                <label for="reset">Restablecer:</label>
+                <input type="reset" id="reset" value="Restablecer">
+            </div>
+
+            <div class="input-group">
+                <label for="file">Archivo:</label>
+                <input type="file" id="file" name="file">
+            </div>
+
+            <div class="input-group">
+                <label for="color">Color:</label>
+                <input type="color" id="color" name="color">
+            </div>
+
+            <div class="input-group">
+                <label for="range">Rango:</label>
+                <input type="range" id="range" name="range" min="0" max="100">
+            </div>
+
+            <div class="input-group">
+                <label for="tel">Teléfono:</label>
+                <input type="tel" id="tel" name="tel">
+            </div>
+
+            <div class="input-group">
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url">
+            </div>
+
+            <div class="input-group">
+                <label for="datetime-local">Fecha y Hora Local:</label>
+                <input type="datetime-local" id="datetime-local" name="datetime-local">
+            </div>
+
+            <div class="input-group">
+                <label for="month">Mes:</label>
+                <input type="month" id="month" name="month">
+            </div>
+
+            <div class="input-group">
+                <label for="week">Semana:</label>
+                <input type="week" id="week" name="week">
+            </div>
+
+            <div class="input-group">
+                <label for="hidden">Oculto (Hidden):</label>
+                <input type="hidden" id="hidden" name="hidden" value="valor_oculto">
+            </div>
+
+            <div class="input-group">
+                <label for="image">Enviar con Imagen:</label>
+                <input type="image" id="image" name="image" src="img/enviar.jpg" alt="Enviar" style="width: 100px;">
+            </div>
+
+            <div class="input-group">
+                <label for="search">Buscar:</label>
+                <input type="search" id="search" name="search">
+            </div>
+        </form>
+    </div>
+</body>
+<footer>
+    <h1>AUTOR: María Alejandra Lara Vera</h1>
+    <h1> PROGRAMACIÓN WEB I </h1>
+    <h1> SEMESTRE 2B </h1>
+</footer>
+</html>
